@@ -1,0 +1,128 @@
+#main_div {
+  /* background-color: blue; */
+  position: absolute;
+  left: 15%;
+  width: 70%;
+  height: 90%;
+  margin: 3%;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+}
+body {
+  background-color: #f5f5f5;
+  /*   background-color: black; */
+  font-family: "Lato Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #666666;
+}
+.checkbox_red {
+  background-color: red;
+  color: white;
+}
+input[type="checkbox" i] {
+  background-color: red;
+  color: white;
+}
+.p1 {
+  display: flex;
+}
+#email_m {
+  display: inline;
+  height: 10px;
+  color: red;
+  visibility: hidden;
+}
+#password_m {
+  display: inline;
+  height: 10px;
+  color: red;
+  visibility: hidden;
+}
+#login_false_m {
+  display: inline;
+  height: 10px;
+  color: red;
+  visibility: hidden;
+}
+#login_m {
+  display: inline;
+  height: 10px;
+  color: red;
+  visibility: hidden;
+}
+#password_missmatch_m {
+  display: inline;
+  height: 10px;
+  color: red;
+  visibility: hidden;
+}
+
+.box {
+  border-color: #d3dbe4;
+  box-shadow: none;
+  border: 1px solid #d3dbe4;
+  border-radius: 4px;
+  height: 10px;
+  width: 90%;
+  padding: 10px;
+}
+#main_div div {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 40%;
+}
+/* #main_div div:nth-child(1) {
+  background-color: white;
+  width: 40%;
+  height: 90%;
+}
+*/
+#main_div div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 40%;
+  height: 100%;
+}
+
+.p1 {
+  padding: 4%;
+}
+.buttons {
+  height: 40px;
+  width: 30%;
+  border-radius: 5%;
+  border: 1px solid #ea2330;
+  background-color: #ea2330;
+  color: white;
+}
+.imagepart {
+  background-size: cover;
+
+  background: url("https://www.travelguru.com/content/tg-social/images/tghomestays.png");
+}
+/* .imagepart + div {
+  background: transparent;
+} */
+.loginbtn {
+  border: 1px solid white;
+  height: 30px;
+  padding: 5px 10px;
+  background: transparent;
+  color: #fcfcfc;
+}
+
+#imagetxt {
+  position: relative;
+  left: 10%;
+  top: 10%;
+  display: inline;
+  /*  background-color: black; */
+  background: transparent !important;
+}
+.f {
+  display: flex;
+}
