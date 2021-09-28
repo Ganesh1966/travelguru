@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div id="main_div">
+   <!--  <div id="main_div"> -->
        <div class="p1">
           <h2> Sign in to Travelguru securely</h2>
           <form onsubmit="signin(event)">
@@ -36,7 +36,7 @@
      </div>
      <div class="imagepart">
         <div id="imagetxt">
-            <h3>Don't have an account?</h3>
+            <p>Don't have an account?</p>
             <input type="button" class="loginbtn" onclick="signinpagego()"  value="Register Now!" >
            </div>
         </br>
@@ -45,7 +45,7 @@
      <!--    <img src="https://www.travelguru.com/content/tg-social/images/tghomestays.png"> -->
      </div>
      
-    </div>
+    <!-- </div> -->
     <script>
          var local_user_details=localStorage.getItem("user_details");
          var ud=JSON.parse(local_user_details);
