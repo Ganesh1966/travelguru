@@ -95,12 +95,15 @@ input[type="checkbox" i] {
   background-color: white;
   position: absolute;
   display: flex;
-  left: 15%;
+  left: 10%;
   width: 30%;
-  height: 80%;
-  margin-bottom: 5%;
+  height: 75%;
+
   margin: 3%;
+
   padding: 4%;
+  display: flex;
+  word-wrap: normal;
   flex-direction: column;
 }
 .buttons {
@@ -119,9 +122,9 @@ input[type="checkbox" i] {
   background-color: white;
   position: absolute;
   display: flex;
-  left: 50%;
+  left: 47%;
   width: 28%;
-  height: 80%;
+  height: 75%;
   margin-bottom: 5%;
   margin: 3%;
   padding: 4%;
