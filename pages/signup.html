@@ -40,7 +40,7 @@
              <option value="1">Canada(+1)</option>
              <option value="39">Italy (+39)</option>
          </select>
-          <input type="number" class="box"  id="mn" required/>
+          <input type="tel" class="box"  id="mn" required/>
         </div>
         </br>
           <label>EMAIL ID</label>
@@ -52,7 +52,7 @@
         </br>
          <input type="password" class="box"  id="pw"  required/>
         </br>  </br>
-         <label>COMFIRM PASSWORD</label>
+         <label>CONFIRM PASSWORD</label>
         
         </br>
          <input type="password" class="box" id="cpw"  required/>
@@ -73,58 +73,7 @@
      <!--    <img src="https://www.travelguru.com/content/tg-social/images/tghomestays.png"> -->
      </div>
     <!-- </div> -->
-    <script>
-        //sugnup should have emailid& password
-        var user_details=[
-           
-        ];
-        
-        function loginpagego(){
-            console.log("hi");
-            window.location=("./../pages/signin.html");
-        }
-        console.log(user_details);
-        function signup(event){
-            var regsucc=false;
-            event.preventDefault();
-            var fname=document.getElementById("fn").value;
-            var lname=document.getElementById("ln").value;
-            var mob=document.getElementById("mn").value;
-            var mail=document.getElementById("eid").value;
-            var pass=document.getElementById("pw").value;
-            var cpass=document.getElementById("cpw").value;
-            if(cpass!=pass){
-                var miss_pwd=document.getElementById('password_missmatch_m');
-                miss_pwd.style.visibility="visible";
-
-            }
-           
-           else if( my_checkif_user(mail)===false) {
-            var divv=document.getElementById('email_m');
-            divv.style.visibility = "visible";
-               console.log("exist");
-           }
-            else {
-                var newuseradd= {
-                    emailid:mail,
-                    password:pass,
-                }
-              user_details.push(newuseradd);
-              regsucc=true;
-            }
-           
-            var local_user=localStorage.setItem("user_details",JSON.stringify(user_details));
-            console.log(user_details);
-            if(regsucc==true) window.location=("./../pages/redirectpage.html");
-        }
-        function  my_checkif_user(mail){
-            var local_user_details=localStorage.getItem("user_details");
-         var ud=JSON.parse(local_user_details);
-            for(var i=0;i<ud.length;i++){
-                if(ud[i].emailid==mail) return false;
-            }
-            return true;
-        }
-    </script>
+  
+    <script src="./../scripts/signup_part.js"></script>
 </body>
 </html>
