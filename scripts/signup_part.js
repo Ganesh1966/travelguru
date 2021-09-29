@@ -33,6 +33,7 @@ function signup(event){
         var newuseradd= {
             emailid:mail,
             password:pass,
+            firstname:fname,
         }
       user_details.push(newuseradd);
       regsucc=true;
@@ -46,10 +47,13 @@ function signup(event){
 function  my_checkif_user(mail){
     var local_user_details=localStorage.getItem("user_details");
  var ud=JSON.parse(local_user_details);
+ if(ud==null) return true;
+ else{
     for(var i=0;i<ud.length;i++){
         if(ud[i].emailid==mail) return false;
     }
     return true;
+}
 }
 
 
@@ -73,23 +77,27 @@ function signin(event){
    console.log(em);
    console.log(pa);
 var flag=false;
+var name;
 for(var i=0;i<ud.length;i++){
  /*   console.log(ud[i].emailid);
    console.log(ud[i].password); */
    if(ud[i].emailid==em && ud[i].password==pa){
        console.log("&");
+        name=ud[i].firstname;
         flag=true;
    }
 }
 var divv=document.getElementById('login_false_m');
 if(flag==false) {
    console.log("NOT successgul");
+  
    divv.style.visibility = "visible";
 }
 else {
    var divv_true=document.getElementById('login_m');
    divv_true.style.visibility = "visible";
    console.log("successgul");
+   console.log(name);
   
     console.log(" going to home page");
     timerId=setTimeout(()=>{
