@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search result page</title>
+    <link rel="stylesheet" href="./../styles/search_page.css">
+    <link rel='stylesheet' id='simple-line-icons-css'  href='https://mk0blogstarteng8gb57.kinstacdn.com/wp-content/themes/neori/css/simple-line-icons.css?ver=2.4.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-icons-css'  href='https://mk0blogstarteng8gb57.kinstacdn.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.12.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-icons-shared-0-css'  href='https://mk0blogstarteng8gb57.kinstacdn.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-icons-fa-regular-css'  href='https://mk0blogstarteng8gb57.kinstacdn.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-icons-fa-solid-css'  href='https://mk0blogstarteng8gb57.kinstacdn.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' type='text/css' media='all' />
+</head>
+<body>
+    <div class="search_filter">
+        <p>HOTEL NAME</p>
+        <input type="text" ></input>
+         </br>
+         <hr>
+         <p>PRICE</p>
+         <div id="check_part"> 
+            <label>
+                <input type="checkbox" id="chkPassport" value="2000" onclick="display_filter(value)" />
+                Rs.2,001 to Rs.4,000
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="chkPassport" value="4000" onclick="display_filter(value)" />
+                Rs.4,001 to Rs.7,000
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="chkPassport" value="7000" onclick="display_filter(value)" />
+                Rs.7,001 to Rs.10,000
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="chkPassport" value="10000" onclick="display_filter(value)" />
+               Greater than Rs.10,000
+            </label>
+            <br>
+        <!--  <input type="checkbox" id="range1"  value="2001"> <label>Rs.2,001 to Rs.4,000</label><br>
+         <input type="checkbox" id="range2"  value="4001"> <label>Rs.4,001 to Rs.7,000</label><br> -->
+         <!-- <input type="checkbox" id="range3"  value="7001"> <label>Rs.7,001 to Rs.10,000</label><br>
+         <input type="checkbox" id="range4"  value="10001"> <label>Greater than Rs.10,001</label><br> -->
+        </div>
+           <hr>
+        
+    </div>
+    <div class="results_display_top">
+        
+        <h4>2 Adults</h4>
+        <h4>2 Nights</h4>
+      
+    </div>
+    <div class="black_tile"></div>
+    <div class="sort_bar">
+
+   <div><div>Sort by:</div><input type="button" onclick="func()" id="filter_star">Star rating</input></div>  
+    </div>
+    <div id="results_display">
+       
+    </div>
+    <script>
+     async function  display_filter(value){
+         console.log(value);
+         value=Number(value);
+         var price2;
+        var dd=document.getElementById('results_display');
+        dd.innerHTML=null;
+       
+        if(value==2000) { price2=Number(4000); }
+        else if(value==4000){price2=Number(7000);}
+        else if(value==7000){price2=Number(10000);}
+        else if(value==10000){price2=Number(47000);}
+        
+             let data=await fetch(`http://localhost:3000/search_data?price_gte=${value}&price_lte=${price2}`);
+             let datad=await data.json();
+            console.log(datad);
+            display_search(datad);
+
+           
+        }
+       /*  else if(value==4000){
+            var price2=Number(7000);
+            let data=await fetch(`http://localhost:3000/search_data?price_gte=${value}&price_lte=${price2}`);
+       
+            let datad=await data.json();
+            console.log(datad);
+            display_search(datad);
+     }
+     else if(value==7000){
+        let data=await fetch('http://localhost:3000/search_data?price_gte=7000&price_lte=10000');
+       
+            let datad=await data.json();
+            console.log(datad);
+            display_search(datad);
+     }
+     else if(value==10000) {
+        let data=await fetch('http://localhost:3000/search_data?price_gte=10000');
+       
+       let datad=await data.json();
+       console.log(datad);
+       display_search(datad);
+     } */
+     
+       
+        var dd=document.getElementById('results_display');
+        async function func(){
+            dd.innerHTML=null;
+            let data=await fetch('http://localhost:3000/search_data?_sort=rating&order=asc');
+            let datad=await data.json();
+            console.log(datad);
+            display_search(datad);
+        }
+        
+        async function fun(){
+            let data=await fetch('http://localhost:3000/search_data');
+            let datad=await data.json();
+            console.log(datad);
+            display_search(datad);
+        }
+        fun();
+
+        function display_search(d){
+            var dd=document.getElementById('results_display');
+            console.log(dd);
+            d.forEach(({id,img_link,locality,rating,place_name,price,info,extra1,extra2,extra3,star_count}) => {
+               // console.log(ele.place_name);
+                console.log(id);
+               let div=document.createElement('div');
+               div.setAttribute('id','each_div');
+              // console.log(extra);
+              /*   let name=document.createElement('p');
+                let name=document.createElement('p');
+                let name=document.createElement('p'); */
+             
+                //name.innerHTML=id;
+
+//star symbol
+                  /*  <div><i class="fas fa-star"></i></div>  */
+    /*  div.innerHTML=`<div id="m">
+    <img id="img_hotel" src=${img_link}>
+    <div id="each_detail">
+        <div class="h_name">${place_name}</div>
+          <div class="l_name"><i class="fas fa-map-marker-alt"></i>${locality}</div>
+          
+          
+          <i class="fas fa-bullseye"></i><i class="fas fa-bullseye"></i>
+          <div>${rating}</div>
+
+          <div>${info}</div>
+          <i class="fas fa-mug-hot"></i>
+          <div>${extra1}</div>
+          <div>${extra2}</div>
+          <div>${extra3}</div>
+          </div>
+       
+     </div>` */
+
+     let mm=document.createElement('div');
+     mm.setAttribute('id','m');
+     let mm_div=document.createElement('div');
+     mm_div.setAttribute('id','mm_d');
+     let ed=document.createElement('div');
+     ed.setAttribute('id','each_detail');
+     let imagee=document.createElement('img');
+     let place_he=document.createElement('div');
+     place_he.setAttribute('class',"h_name");
+     place_he.innerHTML=`${place_name}` ;
+
+
+     let location_n=document.createElement('p');
+     location_n.setAttribute('class',"l_name");
+     location_n.innerHTML=`<i class="fas fa-map-marker-alt"></i>`+`${locality}` ;
+
+      imagee.setAttribute('id','img_hotel');
+      imagee.src=`${img_link}`;
+
+
+      //for rating
+      let star=document.createElement('p');
+    // star.setAttribute('class',"l_name");
+     if(star_count==3) star.innerHTML=`<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>`;
+     else if(star_count==4) star.innerHTML=`<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>`;
+     else if(star_count==5) star.innerHTML=`<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>`;
+     /*  for(var i=1;i<=star_count;i++){
+        <i class="fas fa-star"></i>
+      } */
+      
+      let e1=document.createElement('p');
+
+      e1.setAttribute('id','extra')
+      if(extra1!=null) e1.innerHTML=`</br>`+`<i class="far fa-check-circle"></i>`+`${extra1}`;
+      ed.append(place_he);
+      mm_div.append(star,location_n,e1);
+     //image.src=img_link;
+     //console.log(img_link);
+     mm.append(imagee,ed,mm_div);
+     
+     div.appendChild(mm);
+
+
+
+              //  div.appendChild(name);
+                dd.append(div);
+
+            });
+          
+          //  body.append(dd);
+        }
+    </script>
+</body>
+</html>

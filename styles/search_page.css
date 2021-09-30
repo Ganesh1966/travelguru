@@ -1,0 +1,139 @@
+body {
+  letter-spacing: normal;
+  background-color: #f5f5f5;
+  /*   background-color: black; */
+  font-family: "Lato Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #666666;
+}
+.search_filter {
+  letter-spacing: normal;
+  font-family: "Lato Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  left: 5%;
+  width: 20%;
+  height: 75%;
+
+  display: flex;
+  word-wrap: normal;
+  flex-direction: column;
+}
+.results_display_top {
+  letter-spacing: normal;
+  font-family: "Lato Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+
+  position: absolute;
+  display: flex;
+  left: 30%;
+  width: 50%;
+  height: 10%;
+  margin-bottom: 5%;
+}
+#results_display {
+  letter-spacing: normal;
+  font-family: "Lato Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  top: 15%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  padding: 0%;
+  left: 28%;
+  width: 70%;
+  height: 75%;
+}
+.sort_bar {
+  letter-spacing: normal;
+  font-family: "Lato Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  top: 12%;
+  position: absolute;
+  display: flex;
+  left: 28%;
+  flex-direction: column;
+  background-color: pink;
+  height: 10px;
+  width: 70%;
+}
+.black_tile {
+  letter-spacing: normal;
+  font-family: "Lato Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  top: 7%;
+  position: absolute;
+  display: flex;
+  left: 28%;
+
+  background-color: black;
+  height: 35px;
+  width: 65%;
+}
+.sort_bar div {
+  display: inline;
+}
+#m {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  flex-direction: column;
+}
+#img_hotel {
+  float: left;
+  height: 100%;
+  width: 40%;
+}
+#each_detail {
+  position: absolute;
+  display: flex;
+  left: 40%;
+  height: auto;
+  width: auto;
+}
+#each_div {
+  height: 40%;
+  width: 90%;
+  padding: 2%;
+}
+#check {
+  color: black;
+}
+#check_part {
+  display: inline;
+}
+/* hr {
+  display: block;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  height: 2px;
+  width: 100%;
+}
+ */
+.h_name {
+  padding-top: 3%;
+  font-size: larger;
+  color: black;
+}
+#mm_d {
+  position: absolute;
+  display: flex;
+  left: 40%;
+  padding-top: 2%;
+  font-size: small;
+}
+/* #extra_feat {
+  position: absolute;
+  display: flex;
+  left: -120%;
+  padding-top: 2%;
+  font-size: small;
+}
+ */
