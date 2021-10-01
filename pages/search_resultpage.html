@@ -15,7 +15,8 @@
 <body>
     <div class="search_filter">
         <p>HOTEL NAME</p>
-        <input type="text" ></input>
+        <input type="text" > </input>
+       <div class="search_btn"><i class="fas fa-search"></i></div>
          </br>
          <hr>
          <p>PRICE</p>
@@ -49,15 +50,18 @@
         
     </div>
     <div class="results_display_top">
-        
-        <h4>2 Adults</h4>
-        <h4>2 Nights</h4>
+         
+<div><h3>Navi Mumbai</h3></div>
+    
+
+<div><h4>FRI, 1 OCT - MON, 4 OCT (3 NIGHTS)  | 1 ROOM | 2 ADULTS</h4></div>
+       
       
     </div>
     <div class="black_tile"></div>
     <div class="sort_bar">
 
-   <div><div>Sort by:</div><input type="button" onclick="func()" id="filter_star">Star rating</input></div>  
+   <div><div>Sort by:</div><input type="button" class="sorting_btn" value="Star Ratings" onclick="func()" id="filter_star"></input></div>  
     </div>
     <div id="results_display">
        
@@ -72,7 +76,7 @@
        
         if(value==2000) { price2=Number(4000); }
         else if(value==4000){price2=Number(7000);}
-        else if(value==7000){price2=Number(10000);}
+        else if(value==7000){price2=Number(12000);}
         else if(value==10000){price2=Number(47000);}
         
              let data=await fetch(`http://localhost:3000/search_data?price_gte=${value}&price_lte=${price2}`);
@@ -126,7 +130,7 @@
         function display_search(d){
             var dd=document.getElementById('results_display');
             console.log(dd);
-            d.forEach(({id,img_link,locality,rating,place_name,price,info,extra1,extra2,extra3,star_count}) => {
+            d.forEach(({id,img_link,locality,rating,place_name,price,info,extra1,extra2,extra3,extra4,star_count}) => {
                // console.log(ele.place_name);
                 console.log(id);
                let div=document.createElement('div');
@@ -163,6 +167,8 @@
      mm.setAttribute('id','m');
      let mm_div=document.createElement('div');
      mm_div.setAttribute('id','mm_d');
+     let f_div=document.createElement('div');
+     f_div.setAttribute('id','f_d');
      let ed=document.createElement('div');
      ed.setAttribute('id','each_detail');
      let imagee=document.createElement('img');
@@ -190,14 +196,42 @@
       } */
       
       let e1=document.createElement('p');
+      let e2=document.createElement('p');
+      let e3=document.createElement('p');
+      let e4=document.createElement('p');
 
-      e1.setAttribute('id','extra')
-      if(extra1!=null) e1.innerHTML=`</br>`+`<i class="far fa-check-circle"></i>`+`${extra1}`;
+     /*  e1.setAttribute('id','extra') */
+     console.log(extra1);
+      if(extra1!="") e1.innerHTML=`<i class="far fa-check-circle"></i>`+`${extra1}`;
+      if(extra2!="") e2.innerHTML=`<i class="fas fa-mug-hot"></i>`+`${extra2}`;
+      if(extra3!="") e3.innerHTML=`<i class="fas fa-wifi"></i>`+`${extra3}`;
+      if(extra4!="") e4.innerHTML=`<i class="fas fa-dumbbell"></i>`+`${extra4}`;
       ed.append(place_he);
-      mm_div.append(star,location_n,e1);
+      f_div.append(e1,e2,e3,e4);
+
+
+
+      let rating_d=document.createElement('div');
+      rating_d.setAttribute('id','rating_css');
+
+      let r=document.createElement('p');
+      let booking_btn=document.createElement('button');
+      booking_btn.setAttribute('id',"button_booking");
+      booking_btn.innerHTML="Choose Room";
+      let inf=document.createElement('p');
+      let price_d=document.createElement('p');
+      let nights=document.createElement('p');
+      r.innerHTML=`<i class="fas fa-bullseye">`+`<i class="fas fa-bullseye">`+`${rating}`+"Excellent"; 
+        inf.innerHTML=`${info}`+`${rating}`;
+        price_d.innerHTML=`${price}`;
+        nights.innerHTML="for 3 nights";
+        
+        rating_d.append(r,inf,price_d,nights,booking_btn);
+      mm_div.append(star,location_n,f_div);
+      
      //image.src=img_link;
      //console.log(img_link);
-     mm.append(imagee,ed,mm_div);
+     mm.append(imagee,ed,mm_div,rating_d);
      
      div.appendChild(mm);
 
