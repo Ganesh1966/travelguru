@@ -2,9 +2,10 @@
     "search_data":[
     {
         "id":"1",
-        "place_name": "ama Stays & Trails Beach House Madh Island, Mumbai",
+        "place_name": "ama Stays & Trails Beach House Madh Island",
         "locality": "Erangal Beach,Mumbai",
-        "price": "45,000",
+        "price": "9,500",
+        "rate":"9500",
         "img_link": "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_srplist/v1589271713/Hotel/Mumbai/00177885/Carousel_Image_RAUoHU.jpg",
         "rating": "5/5",
         
@@ -23,7 +24,7 @@
         "img_link": "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_srplist/v1583995846/Hotel/00000153/Deluxe_Room_dGDTnx.jpg",
         "rating": "4/5",
         "info": "Wonderful Location",
-        
+        "rate":"3869",
         "extra1": "Free Cancellation",
         "extra2": "Free Breakfast",
          "extra3":"Free WiFi",
@@ -38,7 +39,7 @@
         "img_link": "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_srplist/v1550896089/Hotel/Mumbai/00052452/70420437-H1-4TSM_Facade_Morning_1148_yciJ8C.jpg",
         "rating": "4/5",
         "info": "Exemplary Cleanliness",
-       
+        "rate":"7500",
         "extra1": "Free Cancellation",
         "extra2": "",
          "extra3":"Free WiFi",
@@ -53,7 +54,7 @@
         "img_link": "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_srplist/v1401372031/Domestic%20Hotels/Hotels_Mumbai/JW%20Marriott%20Hotel/Overview.jpg",
         "rating": "4/5",
         "info": "Wonderful Location",
-       
+        "rate":"9000",
         "extra1": "Free Cancellation",
         "extra2": "",
          "extra3":"Free WiFi",
@@ -68,7 +69,7 @@
         "img_link": "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_srplist/v1398408948/Domestic%20Hotels/Hotels_Mumbai/Meluha%20-%20The%20Fern/Overview.jpg",
         "rating": "3/5",
         "info": "Wonderful Location",
-        
+        "rate":"6250",
         "extra1": "Free Cancellation",
         "extra2": "",
          "extra3":"Free WiFi",
@@ -83,7 +84,7 @@
         "img_link": "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_srplist/v1499863261/Hotel/Mumbai/00084101/Overview_(1)_5xH6Ep.jpg",
         "rating": "4/5",
         "info": "Impressive Location",
-      
+        "rate":"4799",
         "star_count":"4",
         "extra1": "",
         "extra2": "Free Breakfast",
@@ -102,7 +103,8 @@
         "extra1": "Free Cancellation",
         "extra2": "Free Breakfast",
          "extra3":"Free WiFi",
-         "extra4":"Health Club"
+         "extra4":"Health Club",
+         "rate":"2799"
     },
     {
         "id":"8",
@@ -116,7 +118,8 @@
         "extra2": "Free Breakfast",
          "extra3":"Free WiFi",
          "extra4":"",
-         "star_count":"4"
+         "star_count":"4",
+         "rate":"6499"
     },
     {
         "id":"9",
@@ -125,6 +128,7 @@
         "price": "4,498",
         "img_link": "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_srplist/v1502875523/Hotel/Mumbai/00001963/ramada-plaza-palm-grove_FwGRtW.jpg",
         "rating": "4/5",
+        "rate":"4498",
         "info": "Wonderful Location",
         "star_count":"4",
         "extra1": "",
@@ -141,7 +145,7 @@
         "rating": "5/5",
         "info": "Impressive Service",
         "star_count":"5",
-     
+        "rate":"6825",
         "extra1": "",
         "extra2": "Free Breakfast for 2",
          "extra3":"Free WiFi",
@@ -159,7 +163,8 @@
         "extra1": "Free Cancellation",
         "extra2": "",
          "extra3":"Free WiFi",
-         "extra4":""
+         "extra4":"",
+         "rate":"4850"
     }
    
 ]
