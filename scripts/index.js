@@ -3,7 +3,7 @@ var c = 0;
 
 function booked1()
 {
-    location.assign("arewah1.html");
+    location.assign("./../pages/payment.html");
 }
 
 function booked2()

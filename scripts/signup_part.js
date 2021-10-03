@@ -101,7 +101,7 @@ else {
   
     console.log(" going to home page");
     timerId=setTimeout(()=>{
-        window.location=("./../index.html");
+        window.location=("./../pages/home.html");
     },3500);
  }
   

@@ -27,7 +27,7 @@
             <a href="" class="inline">
               
                 <span>
-                    <span class="bt1">&#60; <a href="" class="inline"></span>   Back to Search Results</a>
+                    <span class="bt1">&#60; <a href="./../pages/search_resultpage.html" class="inline"></span>   Back to Search Results</a>
                 </span>
 
             </a>
@@ -50,7 +50,7 @@
             <div >
             <div>
             <p id="pos" >
-                <span id="poster" class="pr1"></span>
+                <span  class="pr1">ama Stays & Trails Beach House Madh Island</span>
                 <span class="fa fa-star chec"></span>
                 <span class="fa fa-star chec"></span>
                 <span class="fa fa-star chec"></span>
@@ -63,7 +63,7 @@
                     <button id="mtr3" class="pr6">Choose Room</button>
                 </span></a>
                   <span id="mtr4" class="pr5">&#8377;
-                  <span id="rate" class="mtr5 pr3">
+                  <span  class="mtr5 pr3">9,500
                     <span></span>
                    
              </span>
@@ -74,7 +74,7 @@
             
             </p>
             <p>
-                <span id="add" class="pr2"></span>
+                <span class="pr2">Tata Power Erangal Inspection Bungalow, Erangal , Madh Island , Malad, Mumbai, 400061</span>
             </p>
             
            
@@ -136,7 +136,7 @@
                 </div>
 <div class="container" id="mtr12">
     <div class="mySlides">
-      <img id="pic" class="mtr13">
+      <img src="https://imgcld.yatra.com/ytimages/image/upload/t_hotel_srplist/v1589271713/Hotel/Mumbai/00177885/Carousel_Image_RAUoHU.jpg" class="mtr13">
     </div>
   
     <div class="mySlides">
@@ -153,7 +153,7 @@
   
     <div class="row">
       <div class="column" id="mtr17">
-        <img class="demo cursor mtr18" id="pic1" onclick="currentSlide(1)">
+        <img class="demo cursor mtr18" src="https://imgcld.yatra.com/ytimages/image/upload/t_hotel_srplist/v1589271713/Hotel/Mumbai/00177885/Carousel_Image_RAUoHU.jpg" onclick="currentSlide(1)">
       </div>
       <div class="column">
         <img class="demo cursor" src="https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1589271884/Hotel/Mumbai/00177885/Gallery_01_28y7GL.jpg" id="mtr19" onclick="currentSlide(2)">
@@ -811,7 +811,7 @@ Slow down, step back, and re-discover the simple things that bring new meaning t
     
 async function get(){
         var choice=0;
-         let res = await fetch("http://localhost:5000/api/products");
+         let res = await fetch("http://localhost:3000/api/search_data");
          let data = await res.json();
          console.log('data:', data[0].img_link)
      document.getElementById('poster').innerText=data[choice]["place_name"];
