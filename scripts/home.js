@@ -9,7 +9,8 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides(n) 
+{
   var i;
   var slides = document.getElementsByClassName("mySlides");
   console.log(slides.length);
