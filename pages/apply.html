@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./../styles/dindex.css">
     <link rel="stylesheet" href="./../styles/soc.css">
     <link rel="stylesheet" href="./../styles/third.css">
+    <link rel="stylesheet" href="./../styles/navbar.css">
     
     <title>Apply</title>
 
@@ -826,3 +827,9 @@ async function get(){
      
 </script>
 </html>
+<script type="module">
+    import navbar from "../scripts/navbar.js";
+    let div = document.createElement("div");
+    div.innerHTML = navbar();
+    document.body.prepend(div);
+</script>
