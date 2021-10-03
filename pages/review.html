@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Your Booking</title>
+    <style>
+        #container1{
+            width: 60%;
+            margin:auto;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+            height: 234px;
+            border: 1px solid black;
+            grid-gap: 1%;
+            font-family: Helvetica, sans-serif;
+        }
+        /* #container1>div{
+            border:1px solid red;
+        } */
+        #container1>div:nth-child(1){
+            grid-row-start: 1;
+            grid-row-end: -1;
+        }
+
+        #container1>div:nth-child(2){
+            grid-column-start: 2;
+            grid-column-end: -1;
+            color: #333;
+            font-size: 1.286rem;
+            font-family: Helvetica;
+        }
+        #container1>div:nth-child(3){
+            grid-column-start: 2;
+            grid-column-end: -1;
+            font-family: "Rubik-Regular","Helvetica, sans-serif";
+            font-weight: normal;
+            color: #999;
+        }
+        #container1>div:nth-child(4){
+            grid-column-start: 2;
+            grid-column-end: -1;
+            font-family: "Rubik-Regular","Helvetica, sans-serif";
+            font-weight: normal;
+            color: #999;
+        }
+
+        #container1>div:nth-child(5){
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 8;
+            text-align: center;
+            display: grid;
+            grid-template-rows: 4fr 5fr 1fr;
+            border: 1px solid grey
+        }
+        #container1>div:nth-child(5)>div:nth-child(1){
+            color: #666;
+            background-color: #D8DBD7;
+        }
+        #container1>div:nth-child(5)>div:nth-child(2){
+            font-size: 30px;
+            font-weight: 500;
+            color: #333;
+            background-color: #D8DBD7;
+        }
+
+        #container1>div:nth-child(5)>div:nth-child(3){
+            color: #666;
+        }
+
+        
+        #container1>div:nth-child(6){
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 4;
+            grid-row-end: 8;
+            text-align: center;            
+            text-align: center;
+            display: grid;
+            grid-template-rows: 4fr 5fr 1fr;
+            border: 1px solid grey
+        }
+        #container1>div:nth-child(6)>div:nth-child(1){
+            color: #666;
+            background-color: #D8DBD7;
+        }
+        #container1>div:nth-child(6)>div:nth-child(2){
+            font-size: 30px;
+            font-weight: 500;
+            color: #333;
+            background-color: #D8DBD7;
+        }
+
+        #container1>div:nth-child(6)>div:nth-child(3){
+            color: #666;
+        }
+
+        #container1>div:nth-child(7){
+            grid-column-start: 7;
+            grid-column-end: 10;
+            color: #333;
+            font-size: 1.143rem;
+        }
+        #container1>div:nth-child(8){
+            grid-column-start: 10;
+            grid-column-end: -1;
+            color: #4197cd;
+            font-size: 1.143rem;
+        }
+
+        #container1>div:nth-child(9){
+            grid-column-start: 7;
+            grid-column-end: 12;
+            grid-row-start: 5;
+            grid-row-end: 8;
+            padding-top: 4%;
+            margin: 2px;
+            border-top: 1px solid #D8DBD7;
+            border-bottom: 1px solid #D8DBD7;
+        }
+    </style>
+</head>
+<body>
+    <div id=container1>
+        <div><img src="https://imgcld.yatra.com/ytimages/image/upload/t_hotel_srplist/v1589271713/Hotel/Mumbai/00177885/Carousel_Image_RAUoHU.jpg"></div>
+        <div>ama Stays & Trails Beach House Madh Island, Mumbai</div>
+        <div>Tata Power Erangal Inspection Bungalow, Erangal , Madh Island , Malad, Erangal </div>
+        <div>Beach, Mumbai, 400061, India </div>
+        <div>
+            <div>Check-In</div>
+            <div>5</div>
+            <div>Oct | 4:00 PM </div>
+        </div>
+        <div>
+            <div>Check-Out</div>
+            <div>7</div>
+            <div>Oct | 11:00 AM </div>
+        </div>
+        <div>3 Days & 2 Nights</div>
+        <div>Change Room</div>
+        <div>Room 1: 1 Adult</div>
+    </div>
+</body>
+</html>

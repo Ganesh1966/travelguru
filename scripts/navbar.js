@@ -9,7 +9,7 @@ function navbar(){
         <div class="dropdown">
             <button class="dropbtn">
                 <div class="hosting">
-                    <a href="##.html">Become a Host</a>
+                    <a href="./hosting.html">Become a Host</a>
                 </div>
             </button>
         </div>
