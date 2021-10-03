@@ -217,13 +217,13 @@ Slow down, step back, and re-discover the simple things that bring new meaning t
 
 async function get(){
         var choice=0;
-         let res = await fetch("http://localhost:5000/api/products");
+         let res = await fetch("http://localhost:5000/api/search_data");
          let data = await res.json();
          console.log('data:', data[0].img_link)
      document.getElementById('poster').innerText=data[choice]["place_name"];
      var p1=data[0]["rating"];
      var t=10;
-    var ty=document.getElementById('pic').src=data[0]["img_link"];
+    var ty=document.getElementById('pic').src=data[choice]["img_link"];
     document.getElementById('pic1').src=ty;
      document.getElementById('add').innerText=data[choice]["locality"];
      document.getElementById('rate').innerText=data[choice]["price"];
