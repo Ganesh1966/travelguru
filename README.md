@@ -40,6 +40,7 @@ To deploy this project run
 - Payment page.
 ## Screenshots
 - Homepage
+- 
    ![Project homepage](https://miro.medium.com/max/700/1*-DFo0TzZp3DCU8CMENUlnw.png)
 - SignIn page
    ![Project SignIn page](https://miro.medium.com/max/700/1*oux-sO2Bc3O915d9CZiM2Q.png)
