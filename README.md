@@ -57,7 +57,7 @@ To deploy this project run
    ![Project  Selected Hotel page](https://miro.medium.com/max/700/1*vSYGUJ9l9nn7Uj1fYZ6GxA.png)
    
 -  Payment page
--  
+  
    ![Project Payment page](https://miro.medium.com/max/700/1*lfdaMEqrIncCsDEMOwxkKw.png)
    
 - Become a Host
