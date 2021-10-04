@@ -43,17 +43,25 @@ To deploy this project run
 - 
    ![Project homepage](https://miro.medium.com/max/700/1*-DFo0TzZp3DCU8CMENUlnw.png)
 - SignIn page
+- 
    ![Project SignIn page](https://miro.medium.com/max/700/1*oux-sO2Bc3O915d9CZiM2Q.png)
 - SignUp page
+- 
    ![Project SignUp page](https://miro.medium.com/max/700/1*4UFtCuTwkeo5WTq_LkQK3w.png)
 
 - Search Result page with filters.
+- 
    ![Project Search Result page](https://miro.medium.com/max/700/1*4WfV-3ln92EuCCdvodYWyA.png)
 -   Hotel details page
+-   
    ![Project  Selected Hotel page](https://miro.medium.com/max/700/1*vSYGUJ9l9nn7Uj1fYZ6GxA.png)
+   
 -  Payment page
+-  
    ![Project Payment page](https://miro.medium.com/max/700/1*lfdaMEqrIncCsDEMOwxkKw.png)
+   
 - Become a Host
+- 
   ![Project Become a Host page](https://miro.medium.com/max/700/1*70qphEAzzISAXJ0MY-NR0g.png)
 ## Demo
 
