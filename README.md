@@ -76,18 +76,19 @@ What did you learn while building this project?
 ## Acknowledgements
 
   - [Special thanks to Masai School](https://https://masaischool.com/)
-## Team-members/Contributors
-
-
-
   
-- Caryn D.
+  
+## Team-members/Contributors and their contributions
+
+
+- Caryn D-SignIn ,SignUp page and search result page/functionality.
      [@carynd](https://www.github.com/carynd)
 
 
-- Nikhil Rane.
+- Nikhil Rane-Home and payment page/functionality.
    [@Nikhil-Rane-Lab](https://github.com/Nikhil-Rane-Lab)
 
-- Shashwat Awasthi.
+- Shashwat Awasthi-Navbar and ‘Become a Host’ page design/functionality.
     [@awasthi-shashwat](https://github.com/awasthi-shashwat)
- - Venkataraman Ethirajan. [@Ganesh1966](https://github.com/Ganesh1966)
+ - Venkataraman Ethirajan-Homepage and Hotel display page/functionality.
+    [@Ganesh1966](https://github.com/Ganesh1966)
