@@ -63,9 +63,6 @@ To deploy this project run
 - Become a Host
 
   ![Project Become a Host page](https://miro.medium.com/max/700/1*70qphEAzzISAXJ0MY-NR0g.png)
-//## Demo
-
-//Insert gif or link to demo
 
   
 ## Lessons Learned
