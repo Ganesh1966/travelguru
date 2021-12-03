@@ -9,7 +9,7 @@ function navbar(){
         <div class="dropdown">
             <button class="dropbtn">
                 <div class="hosting">
-                    <a href="##.html">Become a Host</a>
+                    <a href="../pages/hosting.html">Become a Host</a>
                 </div>
             </button>
         </div>
@@ -30,8 +30,8 @@ function navbar(){
         <div class="dropdown">
             <button class="dropbtn">My Account</button>
             <div class="dropdown-content">
-                <a href="./pages/signin.html">Login</a>
-                <a href="./pages/signup.html">SignUp</a>
+                <a href="../pages/signinf.html">Login</a>
+                <a href="../pages/signupf.html">SignUp</a>
             </div>
         </div>
     </div>`
